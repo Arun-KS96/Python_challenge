@@ -5,5 +5,4 @@ This progam is used to generate the band name by taking two parameters from the 
 
 ![](/images/1.1.png)
 
-This is output of the above program.
 ![](/images/1.2.png)
