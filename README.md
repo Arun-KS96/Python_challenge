@@ -71,3 +71,25 @@ Write a program that works out whether if a given year is a leap year. A normal 
 ![](/images/8.1.png)
 
 ![](/images/8.2.png)
+
+## Exercise 7
+
+Congratulations, you've got a job at Python Pizza. Your first job is to build an automatic pizza order program.
+
+Based on a user's order, work out their final bill.
+
+- Small Pizza: $15
+- Small Pizza: $15
+- Medium Pizza: $20
+- Medium Pizza: $20
+- Large Pizza: $25
+- Large Pizza: $25
+- Pepperoni for Small Pizza: +$2
+- Pepperoni for Small Pizza: +$2
+- Pepperoni for Medium or Large Pizza: +$3
+- Pepperoni for Medium or Large Pizza: +$3
+- Extra cheese for any size pizza: + $1
+
+![](/images/9.1.png)
+
+![](/images/9.2.png)
