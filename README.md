@@ -2,5 +2,8 @@
 
 # Band name generator
 This progam is used to generate the band name by taking two parameters from the user i.e. city name and pet name.
+
 ![](/images/1.1.png)
+
+This is output of the above program.
 ![](/images/1.2.png)
