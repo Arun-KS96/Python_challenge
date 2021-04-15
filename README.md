@@ -14,3 +14,11 @@ Write a program that adds the digits in a 2 digit number. e.g. if the input was 
 ![](/images/2.1.png)
 
 ![](/images/2.2.png)
+
+## Exercise 2
+
+Write a program that calculates the Body Mass Index (BMI) from a user's weight and height.
+
+![](/images/3.1.png)
+
+![](/images/3.2.png)
