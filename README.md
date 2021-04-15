@@ -22,3 +22,11 @@ Write a program that calculates the Body Mass Index (BMI) from a user's weight a
 ![](/images/3.1.png)
 
 ![](/images/3.2.png)
+
+## Exercise 3
+
+Create a program using maths and f-Strings that tells us how many days, weeks, months we have left if we live until 90 years old.
+
+![](/images/4.1.png)
+
+![](/images/4.2.png)
