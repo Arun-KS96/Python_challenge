@@ -107,3 +107,7 @@ Take both people's names and check for the number of times the letters in the wo
 - For Love Scores between 40 and 50, the message should be: "Your score is **y**, you are alright together."
 
 - Otherwise, the message will just be their score. e.g.: "Your score is **z**."
+
+![](/images/10.1.png)
+
+![](/images/10.2.png)
