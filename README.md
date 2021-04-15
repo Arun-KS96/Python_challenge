@@ -37,3 +37,11 @@ Create a program using maths and f-Strings that tells us how many days, weeks, m
 
 ![](/images/5.2.png)
 
+## Exercise 4
+
+Write a program that works out whether if a given number is an odd or even number.
+
+![](/images/6.1.png)
+
+![](/images/6.2.png)
+
