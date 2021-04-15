@@ -1,6 +1,6 @@
 # Python Exercise and Projects
 
-## Band name generator
+## Project 1: Band name generator
 This progam is used to generate the band name by taking two parameters from the user i.e. city name and pet name.
 
 ![](/images/1.1.png)
@@ -30,3 +30,10 @@ Create a program using maths and f-Strings that tells us how many days, weeks, m
 ![](/images/4.1.png)
 
 ![](/images/4.2.png)
+
+## Project 2: TIP Calculator
+
+![](/images/5.1.png)
+
+![](/images/5.2.png)
+
