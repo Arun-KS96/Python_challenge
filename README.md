@@ -111,3 +111,11 @@ Take both people's names and check for the number of times the letters in the wo
 ![](/images/10.1.png)
 
 ![](/images/10.2.png)
+
+## Project 3: Treasure Island
+
+![](/images/11.1.png)
+
+![](/images/11.2.png)
+
+![](/images/11.3.png)
