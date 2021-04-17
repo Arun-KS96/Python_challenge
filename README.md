@@ -119,3 +119,14 @@ Take both people's names and check for the number of times the letters in the wo
 ![](/images/11.2.png)
 
 ![](/images/11.3.png)
+
+## Exercise 9
+
+Write a virtual coin toss program which will randomly tell the user "Heads" or "Tails".
+
+![](/images/12.1.png)
+
+![](/images/12.2.png)
+
+![](/images/12.3.png)
+
