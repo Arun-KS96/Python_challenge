@@ -130,3 +130,12 @@ Write a virtual coin toss program which will randomly tell the user "Heads" or "
 
 ![](/images/12.3.png)
 
+## Exercise 10
+
+You are going to write a program which will select a random name from a list of names. The person selected will have to pay for everybody's food bill.
+**Important**: *You are not allowed to use the choice() function.*
+
+![](/images/13.1.png)
+
+![](/images/13.2.png)
+
