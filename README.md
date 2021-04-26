@@ -139,3 +139,10 @@ You are going to write a program which will select a random name from a list of 
 
 ![](/images/13.2.png)
 
+## Exercise 11
+
+Write a program which will mark a spot with an X.
+
+![](/images/14.1.png)
+
+![](/images/14.2.png)
