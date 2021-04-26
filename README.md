@@ -146,3 +146,13 @@ Write a program which will mark a spot with an X.
 ![](/images/14.1.png)
 
 ![](/images/14.2.png)
+
+## Project 4: Rock Paper Scissor
+
+![](/images/15.1.png)
+
+![](/images/15.2.png)
+
+![](/images/15.3.png)
+
+![](/images/15.4.png)
