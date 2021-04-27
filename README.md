@@ -156,3 +156,12 @@ Write a program which will mark a spot with an X.
 ![](/images/15.3.png)
 
 ![](/images/15.4.png)
+
+## Exercise 12
+
+Write a program that calculates the average student height from a List of heights.e.g. student_heights = [180, 124, 165, 173, 189, 169, 146]
+**Important:** You should not use the sum() or len() functions in your answer. You should try to replicate their functionality using for loops.
+
+![](/images/16.1.png)
+
+![](/images/16.2.png)
