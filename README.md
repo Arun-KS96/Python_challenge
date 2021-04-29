@@ -165,3 +165,12 @@ Write a program that calculates the average student height from a List of height
 ![](/images/16.1.png)
 
 ![](/images/16.2.png)
+
+## Exercise 13
+
+Write a program that calculates the highest score from a List of scores.e.g. student_scores = [78, 65, 89, 86, 55, 91, 64, 89]
+**Important:** You are not allowed to use the max or min functions.
+
+![](/images/17.1.png)
+
+![](/images/17.2.png)
