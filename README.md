@@ -160,6 +160,7 @@ Write a program which will mark a spot with an X.
 ## Exercise 12
 
 Write a program that calculates the average student height from a List of heights.e.g. student_heights = [180, 124, 165, 173, 189, 169, 146]
+
 **Important:** You should not use the sum() or len() functions in your answer. You should try to replicate their functionality using for loops.
 
 ![](/images/16.1.png)
@@ -169,6 +170,7 @@ Write a program that calculates the average student height from a List of height
 ## Exercise 13
 
 Write a program that calculates the highest score from a List of scores.e.g. student_scores = [78, 65, 89, 86, 55, 91, 64, 89]
+
 **Important:** You are not allowed to use the max or min functions.
 
 ![](/images/17.1.png)
