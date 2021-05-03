@@ -172,13 +172,38 @@ Based on a user's order, work out their final bill.
 - Pepperoni for Medium or Large Pizza: +$3
 - Extra cheese for any size pizza: + $1
 
-![](/images/9.1.png)
+```python
+print("Welcome to Python Pizza Deliveries!")
+size = input("What size pizza do you want? S, M, or L ")
+add_pepperoni = input("Do you want pepperoni? Y or N ")
+extra_cheese = input("Do you want extra cheese? Y or N ")
+
+bill = 0
+
+if size == "S":
+  bill += 15
+elif size == "M":
+  bill += 20
+else:
+  bill += 25
+
+if add_pepperoni == "Y":
+  if size == "S":
+    bill += 2
+  else:
+    bill += 3
+    
+if extra_cheese == "Y":
+  bill += 1
+  
+print(f"Your final bill is: ${bill}.")
+```
 
 ![](/images/9.2.png)
 
 ## Exercise 8
 
-You are going to write a program that tests the compatibility between two people.
+Write a program that tests the compatibility between two people.
 
 To work out the love score between two people:
 
@@ -190,15 +215,86 @@ Take both people's names and check for the number of times the letters in the wo
 
 - Otherwise, the message will just be their score. e.g.: "Your score is **z**."
 
-![](/images/10.1.png)
+```python
+print("Welcome to the Love Calculator!")
+name1 = input("What is your name? \n")
+name2 = input("What is their name? \n")
+
+concatenated_string = name1 + name2
+string_in_lowercase = concatenated_string.lower()
+
+t = string_in_lowercase.count("t")
+r = string_in_lowercase.count("r")
+u = string_in_lowercase.count("u")
+e = string_in_lowercase.count("e")
+
+true = t + r + u + e
+
+l = string_in_lowercase.count("l")
+o = string_in_lowercase.count("o")
+v = string_in_lowercase.count("v")
+e = string_in_lowercase.count("e")
+
+love = l + o + v + e
+love_score = int(str(true) + str(love))
+
+if love_score < 10 or love_score > 90:
+  print(f"Your score is {love_score}, you go together like coke and mentos.")
+elif love_score >= 40 and love_score <= 50:
+  print(f"Your score is {love_score}, you are alright together.")
+else:
+  print(f"Your score is {love_score}")
+```
 
 ![](/images/10.2.png)
 
 ## Project 3: Treasure Island
 
-![](/images/11.1.png)
+```python
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.") 
 
-![](/images/11.2.png)
+input1 = input('You are at a cross road. Where do you want to go? Type "left" or "right" \n' ).lower()
+
+if input1 == "left":
+  input2 = input('You came to a lake. There is an island in the middle of the lake. Type "wait" to wait for a boat. Type "swim" to swim across. \n').lower()
+  if input2 == "wait":
+    input3 = input('You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow and one blue, Which color do you choose? \n').lower()
+    if input3 == "yellow":
+      print("You WIN \n")
+    elif input3 == "red":
+      print("Burned by fire. Game Over! \n")
+    elif input3 == "blue":
+      print("Eaten by beasts. Game Over! \n")
+    else:
+      print("Game Over! \n")
+  else:
+    print("Attacked by trout. Game Over! \n")
+else:
+  print("Fall into a hole. Game Over! \n")
+```
 
 ![](/images/11.3.png)
 
