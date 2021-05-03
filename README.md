@@ -20,7 +20,13 @@ print("Your band name could be " + city_name + " " + pet_name + "\n")
 
 Write a program that adds the digits in a 2 digit number. e.g. if the input was 35, then the output should be 3 + 5 = 8.
 
-![](/images/2.1.png)
+```python
+two_digit_number = input("Type a two digit number: ")
+
+num1 = int(two_digit_number[0])
+num2 = int(two_digit_number[1])
+print(num1 + num2)
+```
 
 ![](/images/2.2.png)
 
@@ -28,7 +34,16 @@ Write a program that adds the digits in a 2 digit number. e.g. if the input was 
 
 Write a program that calculates the Body Mass Index (BMI) from a user's weight and height.
 
-![](/images/3.1.png)
+```python
+height = input("enter your height in m: ")
+weight = input("enter your weight in kg: ")
+
+new_height = float(height)
+new_weight = int(weight)
+
+bmi = int(new_weight / (new_height**2))
+print("Your bmi is {}".format(bmi))
+```
 
 ![](/images/3.2.png)
 
@@ -36,13 +51,36 @@ Write a program that calculates the Body Mass Index (BMI) from a user's weight a
 
 Create a program using maths and f-Strings that tells us how many days, weeks, months we have left if we live until 90 years old.
 
-![](/images/4.1.png)
+```python
+age = input("What is your current age?")
+
+new_age = int(age)
+days = (90*365) - (new_age * 365) 
+weeks = (90*52) - (new_age * 52)
+months = (90*12) - (new_age * 12)
+
+print(f"You have {days} days, {weeks} weeks, and {months} months left")
+```
 
 ![](/images/4.2.png)
 
 ## Project 2: TIP Calculator
 
-![](/images/5.1.png)
+```python
+#If the bill was $150.00, split between 5 people, with 12% tip. 
+#Each person should pay (150.00 / 5) * 1.12 = 33.6
+#Format the result to 2 decimal places = 33.60
+
+print("Welcome to the tip calculator.")
+total_bill = float(input("What was the total bill? $"))
+percentage = int(input("What percentage tip would you like to give? 10, 12, or 15? "))
+split_bill = int(input("How many people to split the bill? "))
+
+amount_to_be_paid = (total_bill / split_bill) * (1 + (percentage/100))
+final_amount = round(amount_to_be_paid,2)
+final_amount = "{:.2f}".format(amount_to_be_paid)
+print(f"Each person should pay: ${final_amount}")
+```
 
 ![](/images/5.2.png)
 
@@ -50,7 +88,14 @@ Create a program using maths and f-Strings that tells us how many days, weeks, m
 
 Write a program that works out whether if a given number is an odd or even number.
 
-![](/images/6.1.png)
+```python
+number = int(input("Which number do you want to check? "))
+
+if number%2==0:
+  print("This is an even number")
+else:
+  print("This is an odd number")
+```
 
 ![](/images/6.2.png)
 
@@ -66,7 +111,22 @@ It should tell them the interpretation of their BMI based on the BMI value.
 - Over 30 but below 35 they are obese
 - Above 35 they are clinically obese.
 
-![](/images/7.1.png)
+```python
+height = float(input("enter your height in m: "))
+weight = float(input("enter your weight in kg: "))
+
+bmi = round(weight / (height**2))
+if bmi < 18.5:
+  print(f"Your BMI is {bmi}, you are underweight")
+elif bmi < 25:
+  print(f"Your BMI is {bmi}, you are normal weight")
+elif bmi < 30:
+  print(f"Your BMI is {bmi}, you are slightly overweight")
+elif bmi < 35:
+  print(f"Your BMI is {bmi}, you are obese")
+else:
+  print(f"Your BMI is {bmi}, you are clinically obese")
+```
 
 ![](/images/7.2.png)
 
@@ -77,7 +137,20 @@ Write a program that works out whether if a given year is a leap year. A normal 
 - **except** every year that is evenly divisible by 100 
 - **unless** the year is also evenly divisible by 400
 
-![](/images/8.1.png)
+```python
+year = int(input("Which year do you want to check? "))
+
+if year%4==0:
+  if year%100==0:
+    if year%400==0:
+      print("This is a leap Year")
+    else:
+      print("Not a leap year")
+  else:
+    print("This is a leap year")    
+else:
+  print("Not a leap year")
+```
 
 ![](/images/8.2.png)
 
