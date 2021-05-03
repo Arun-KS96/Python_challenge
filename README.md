@@ -207,13 +207,13 @@ Write a program that automatically prints the solution to the FizzBuzz game.
 
 ## Project 5: Password Generator
 
-1. Easy approach to generate a password:
+1. Easy level approach to generate a password:
 
    ![](/images/20.1.png)
 
    ![](/images/20.2.png)
 
-2. Hard approach to generate a password:
+2. High level approach to generate a password:
 
    ![](/images/20.3.png)
 
