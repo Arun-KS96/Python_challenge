@@ -213,4 +213,10 @@ Write a program that automatically prints the solution to the FizzBuzz game.
 
    ![](/images/20.2.png)
 
+2. Hard approach to generate a password:
 
+   ![](/images/20.3.png)
+
+   ![](/images/20.4.png)
+   
+   ![](/images/20.5.png)
