@@ -361,11 +361,71 @@ print(f"{row1}\n{row2}\n{row3}")
 
 ## Project 4: Rock Paper Scissor
 
-![](/images/15.1.png)
+```python
+import random
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
 
-![](/images/15.2.png)
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
 
-![](/images/15.3.png)
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+user = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n"))
+
+if user == 0:
+  print(rock)
+elif user == 1:
+  print(paper)
+elif user == 2:
+  print(scissors)
+else:
+  print("Choose from the given options")
+
+print("Computer chooses:")  
+computer = random.randint(0,2)
+
+if computer == 0:
+  print(rock)
+elif computer == 1:
+  print(paper)
+elif computer == 2:
+  print(scissors)
+
+if (user == 0 and computer == 0) or (user == 1 and computer == 1)or (user == 2 and computer == 2) :
+  print("Its a tie")
+elif user == 0 and computer == 1:
+  print("Computer wins")
+elif user == 0 and computer == 2:
+  print("User Wins")
+elif user == 1 and computer == 0:
+  print("User Wins")
+elif user == 1 and computer == 2:
+  print("Computer wins")
+elif user == 2 and computer == 0:
+  print("Computer Wins")
+elif user == 2 and computer == 1:
+  print("User Wins")
+```
 
 ![](/images/15.4.png)
 
@@ -375,7 +435,24 @@ Write a program that calculates the average student height from a List of height
 
 **Important:** You should not use the sum() or len() functions in your answer. You should try to replicate their functionality using for loops.
 
-![](/images/16.1.png)
+```python
+student_heights = input("Input a list of student heights ").split()
+for n in range(0, len(student_heights)):
+  student_heights[n] = int(student_heights[n])
+
+# This replicates the functionality of "sum" function
+total_height = 0
+for height in student_heights:
+  total_height += height
+
+# This replicates the functionality of "len" function
+number_of_students = 0
+for students in student_heights:
+  number_of_students += 1
+
+average_height = round(total_height / number_of_students)
+print(average_height)
+```
 
 ![](/images/16.2.png)
 
