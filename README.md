@@ -14,8 +14,6 @@ pet_name = input("What's your pet name?\n")
 print("Your band name could be " + city_name + " " + pet_name + "\n")
 ```
 
-![](/images/1.1.png)
-
 ![](/images/1.2.png)
 
 ## Exercise 1
