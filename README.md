@@ -187,3 +187,20 @@ i.e. 2 + 4 + 6 + 8 +10 ... + 98 + 100
 ![](/images/18.1.png)
 
 ![](/images/18.2.png)
+
+## Exercise 15
+
+Write a program that automatically prints the solution to the FizzBuzz game.
+- Your program should print each number from 1 to 100 in turn.
+- When the number is divisible by 3 then instead of printing the number it should print "Fizz".
+- When the number is divisible by 5, then instead of printing the number it should print "Buzz". 
+- When the number is divisible by 5, then instead of printing the number it should print "Buzz". 
+- And if the number is divisible by both 3 and 5 e.g. 15 then instead of the number it should print "FizzBuzz"
+
+![](/images/19.1.png)
+
+![](/images/19.2.png)
+
+![](/images/19.3.png)
+
+![](/images/19.4.png)
