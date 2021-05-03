@@ -302,7 +302,15 @@ else:
 
 Write a virtual coin toss program which will randomly tell the user "Heads" or "Tails".
 
-![](/images/12.1.png)
+```python
+import random
+
+random_number = random.randint(0,1)
+if random_number == 1:
+  print("Heads")
+else:
+  print("Tails")
+```
 
 ![](/images/12.2.png)
 
@@ -313,7 +321,19 @@ Write a virtual coin toss program which will randomly tell the user "Heads" or "
 You are going to write a program which will select a random name from a list of names. The person selected will have to pay for everybody's food bill.
 **Important**: *You are not allowed to use the choice() function.*
 
-![](/images/13.1.png)
+```python
+import random
+# Split string method
+names_string = input("Give me everybody's names, separated by a comma. ")
+names = names_string.split(", ")
+
+names_length = len(names)
+
+random_choice = random.randint(0, names_length-1)
+who_will_buy_meal = names[random_choice]
+
+print(who_will_buy_meal + " is going to buy the meal today")
+```
 
 ![](/images/13.2.png)
 
@@ -321,7 +341,21 @@ You are going to write a program which will select a random name from a list of 
 
 Write a program which will mark a spot with an X.
 
-![](/images/14.1.png)
+```python
+row1 = ["⬜️","⬜️","⬜️"]
+row2 = ["⬜️","⬜️","⬜️"]
+row3 = ["⬜️","⬜️","⬜️"]
+map = [row1, row2, row3]
+print(f"{row1}\n{row2}\n{row3}")
+position = input("Where do you want to put the treasure? ")
+
+column = int(position[0])
+row = int(position[1])
+
+map[row-1][column-1] = 'x'
+
+print(f"{row1}\n{row2}\n{row3}")
+```
 
 ![](/images/14.2.png)
 
