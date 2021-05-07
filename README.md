@@ -589,3 +589,69 @@ print(f"Your password is: {password}")
 ```
    
    ![](/images/20.5.png)
+   
+## Exercise 16
+
+Write a code for the hurdle loop challenge inside www.reeborg.ca/
+
+1. Long code
+```python
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+    
+def wall_in_front():
+    turn_left()
+    move()
+
+def front_is_clear():
+    move()
+    turn_right()
+    move()
+    turn_left()
+
+def run():
+    wall_in_front()
+    turn_right()
+    front_is_clear()
+
+move()
+run()
+move()
+run()
+move()
+run()
+move()
+run()
+move()
+run()
+move()
+run()
+```
+
+![](/images/21.1.png)
+
+2. Short code
+
+```python
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+    
+def jump():
+    move()
+    turn_left()
+    move()
+    turn_right()
+    move()
+    turn_right()
+    move()
+    turn_left()
+    
+for step in range(6):
+    jump()
+```
+
+![](/images/21.2.png)
