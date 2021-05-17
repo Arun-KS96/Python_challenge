@@ -655,3 +655,32 @@ for step in range(6):
 ```
 
 ![](/images/21.2.png)
+
+## Exercise 17
+
+Write a code for the hurdle loop challenge inside www.reeborg.ca/ where the flag position is random.
+
+```python
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+    
+def jump():
+    move()
+    turn_left()
+    move()
+    turn_right()
+    move()
+    turn_right()
+    move()
+    turn_left()
+    
+while not at_goal():
+    jump()
+```
+
+![](/images/22.1.png)
+
+![](/images/22.2.png)
+
