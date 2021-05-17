@@ -714,3 +714,37 @@ while not at_goal():
 ![](/images/23.1.png)
 
 ![](/images/23.2.png)
+
+## Exercise 19
+
+Write a code for the hurdle loop challenge inside www.reeborg.ca/ where the length of the hurdles is not constant.
+
+```python
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+    
+def jump():
+    turn_left()
+    while wall_on_right():
+        move()
+        
+    turn_right()
+    move()
+    turn_right()
+    while front_is_clear():
+        move()
+        
+    turn_left()
+
+while not at_goal():
+    if wall_in_front():
+        jump()
+    else:
+        move()
+```
+
+![](/images/24.1.png)
+
+![](/images/24.2.png)
