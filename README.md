@@ -684,3 +684,33 @@ while not at_goal():
 
 ![](/images/22.2.png)
 
+## Exercise 18
+
+Write a code for the hurdle loop challenge inside www.reeborg.ca/ where the hurdle position is random.
+
+```python
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+    
+def jump():
+    turn_left()
+    move()
+    turn_right()
+    move()
+    turn_right()
+    move()
+    turn_left()
+
+    
+while not at_goal():
+    if wall_in_front():
+        jump()
+    else:
+        move()
+```
+
+![](/images/23.1.png)
+
+![](/images/23.2.png)
