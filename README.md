@@ -1092,3 +1092,5 @@ prime_checker(number=n)
 ```
 
 ![](/images/27.1.png)
+
+![](/images/27.2.png)
