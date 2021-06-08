@@ -1094,3 +1094,66 @@ prime_checker(number=n)
 ![](/images/27.1.png)
 
 ![](/images/27.2.png)
+
+## Exercise 22
+
+You have access to a database of student_scores in the format of a dictionary. The keys in student_scores are the names of the students and the values are their exam scores.
+Write a program that converts their scores to grades. By the end of your program, you should have a new dictionary called student_grades that should contain student names for keys and their grades for values.
+
+```python
+student_scores = {
+  "Harry": 81,
+  "Ron": 78,
+  "Hermione": 99, 
+  "Draco": 74,
+  "Neville": 62,
+}
+
+student_grades = {}
+
+for student in student_scores:
+  if student_scores[student] > 90:
+    student_grades[student] = "Outstanding"
+  elif student_scores[student] > 80:
+    student_grades[student] = "Exceeds Expectation"
+  elif student_scores[student] > 70:
+    student_grades[student] = "Acceptable"
+  else: 
+    student_grades[student] = "Fail"
+
+print(student_grades)
+```
+
+![](/images/28.1.png)
+
+## Exercise 23
+
+Write a program that adds to a travel_log. You can see a travel_log which is a List that contains 2 Dictionaries. Write a function that will work with the following line of code on line 21 to add the entry for Russia to the travel_log.
+
+```python
+travel_log = [
+{
+  "country": "France",
+  "visits": 12,
+  "cities": ["Paris", "Lille", "Dijon"]
+},
+{
+  "country": "Germany",
+  "visits": 5,
+  "cities": ["Berlin", "Hamburg", "Stuttgart"]
+},
+]
+
+def add_new_country(country_name,no_visits,no_cities):
+  new_country = {}
+  new_country["country"] = country_name
+  new_country["visits"] = no_visits
+  new_country["cities"] = no_cities
+  travel_log.append(new_country)
+
+
+add_new_country("Russia", 2, ["Moscow", "Saint Petersburg"])
+print(travel_log)
+```
+
+![](/images/29.1.png)
